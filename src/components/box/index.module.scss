@@ -1,0 +1,29 @@
+@import "../../assets/scss/utils/variables";
+
+.box {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 3px;
+  color: $color-white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 400ms;
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &.no {
+    background: $color-green;
+  }
+
+  &.yes {
+    background: $color-red;
+  }
+
+  &.maybe {
+    background: $color-yellow;
+  }
+}

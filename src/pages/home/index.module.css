@@ -1,0 +1,53 @@
+.home {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.home .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.home .content {
+  position: relative;
+}
+.home .horizontal_row {
+  margin-top: 30px;
+}
+.home .vertical_row {
+  position: absolute;
+  left: -60px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.home .chart {
+  border: solid #efefef;
+  border-width: 0 0 1px 1px;
+  position: relative;
+  padding: 0 0 30px 30px;
+}
+.home .chart .titles span {
+  position: absolute;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  color: #b2bdcd;
+}
+.home .chart .titles span:nth-child(1) {
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  left: -24px;
+  top: 0;
+}
+.home .chart .titles span:nth-child(2) {
+  bottom: -24px;
+  left: 0;
+}
+.home .chart .titles span:nth-child(3) {
+  bottom: -24px;
+  right: 0;
+}
